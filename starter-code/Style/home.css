@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0 !important;
+    padding: 0!important;
+    box-sizing: border-box !important;
+    font-family: 'Roboto', sans-serif;
+    color: white !important;
+}
+
+body{
+    height: 500vh;
+}
+
+h1{
+    font-size: 50px !important;
+}
+
+
+.home{
+    background-image: url(../assets/home/background-home-desktop.jpg);
+    height: 100vh;
+}
+
+.fixed{
+    position: fixed;
+}
+
+.navlist{
+    margin-left: auto !important;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.navlist li{
+    display: block !important;
+}
+
+
+/* .content{
+    
+} */

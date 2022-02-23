@@ -1,0 +1,136 @@
+
+
+/* hambutger */
+.hamburger {
+    margin: 0;
+    margin-left: 15px;
+    padding: 0;
+    float: left;
+    transition: opacity 0.3s;
+  }
+  .hamburger:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+  
+  .hamburger .line {
+    width: 50px;
+    height: 5px;
+    background: rgb(236, 66, 66);
+    margin: 8px auto;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .hamburger .line:nth-child(1) {
+    background-color: #a77a33;
+  }
+  
+  .hamburger .line:nth-child(2) {
+    background-color: #633200;
+  }
+  
+  .hamburger .line:nth-child(3) {
+    background-color: #a77a33;
+  }
+  
+  .hamburger.isactive .line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.isactive .line:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+  }
+  
+  .hamburger.isactive .line:nth-child(3) {
+    transform: translateY(-13px) rotate(-45deg);
+  }
+
+  .nav{
+     position: absolute !important;
+     top: 0;
+  }
+  
+
+
+  /* //micro acton */
+
+
+li{
+  position: relative !important;
+}
+
+ul li a::before{
+  content: "";
+  height: 2px;
+  cursor: pointer;
+  position: absolute !important;
+  bottom:0px;
+  width: 0%;
+  
+  right: 0;
+  background-color: white;
+  transition: all 0.5s ease;
+  
+}
+
+
+ul li a:hover::before{
+  left: 0;
+  width: 100%;
+  }
+
+/* .navbar ul li a:hover::before {
+  width: 100%;
+  left: 0px;
+} */
+
+/* for scrolling */
+.fixed {
+  /* background-color: rgba(72, 6, 116, 0.726) !important; */
+  padding: 20px;
+  position: fixed !important;
+  border-color: #eee !important;
+  animation: fixHeader 1s ease;
+  z-index: 1000000001 !important;
+  top: 0 !important;
+}
+
+
+@media screen and (max-width: 1000px) {
+  ul li {
+    
+  }
+
+  #navbarSupportedContent{
+    text-align: center !important;
+    background-color: #000080;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+
+  
+  ul li a::before{
+    content: "";
+    height: 2px;
+    cursor: pointer;
+    position: absolute !important;
+    bottom:0px;
+    width: 0%;
+    
+    left: 0;
+    background-color: white;
+    transition: all 0.5s ease;
+    
+  }
+
+
+  
+  ul li a :hover::before{
+    right: 0;
+    width: 100%;
+    
+  }
+}

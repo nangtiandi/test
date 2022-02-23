@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="starter-code/Style/destination.css">
+  <link rel="stylesheet" href="starter-code/Style/home.css">
+  <link rel="stylesheet" href="starter-code/Style/nav.css">
+  <link rel="stylesheet" href="starter-code/Style/crew.css">
+
+
+  <title> Shar lar lar space travel  </title>
+</head>
+<body>
+
+ <section class=" home  d-flex  overflow-hidden ">
+   <!-- navbar -->
+   <nav class="navbar  nav navbar-collapse animate__animated animate__bounceInDown navbar-expand-lg w-100  navbar-dark " id="nav">
+    <div class="container-fluid px-lg-5">
+
+        <div class=" w-50 ms-3">
+      <a class="navbar-brand" href="#">
+          <img src="../starter-code/assets/shared/logo.svg" alt=""> 
+        </a>
+        </div>
+      <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </button>
+      <div class="collapse navbar-collapse w-50 me-5 text-end " id="navbarSupportedContent">
+        <ul class="navbar-nav w-100 mb-2 d-flex justify-content-between mb-lg-0 ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">00 Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">01 Destination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">02 Crew  </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">03 Technology</a>
+          </li>
+          
+        
+        </ul>
+      
+      </div>
+    </div>
+  </nav>
+  
+  <div class="row content vh-100  justify-content-center align-items-center  mt-5  mx-4 justify-content-between">
+    
+   <div class="container mx-4">
+     <div class="row">
+      <div class="col-12 col-lg-6  d-flex flex-column justify-content-evenly animate__animated animate__backInLeft">
+        <p class=" text-white">SO, YOU WANT TO TRAVEL TO</p>
+        <h1 class=" text-white fw-bolder ">SPACE</h1>
+        <p class=" text-white">
+          Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
+        </p>
+        </div>
+        <div class="col-12 col-lg-6 mt-3 animate__animated animate__backInRight">
+          <div class=" w-100  text-lg-center text-start mt-5 ">
+            <svg class=" h-50" id="Group" xmlns="http://www.w3.org/2000/svg" width="274" height="274" viewBox="0 0 274 274">
+              <circle id="Oval_Copy" data-name="Oval Copy" cx="137" cy="137" r="137" fill="#fff"/>
+              <text id="EXPLORE" transform="translate(62 154)" fill="#0b0d17" font-size="30" font-family="SegoeUI, Segoe UI" letter-spacing="0.063em"><tspan x="0" y="0">EXPLORE</tspan></text>
+            </svg>
+          </div>
+          
+        </div>
+     </div>
+   </div>
+      
+    
+  </div>
+ </section>
+
+ <!-- Destination -->
+ <section class=" container-fluid vh-100 " id="destination">
+  <div class="row">
+    <div class=" ">
+    <h1 class=" text-white animate__animated animate__bounceInDown"> Pick Your Destination </h1>
+    </div>
+  </div> 
+  <div class="row mt-lg-5">
+     <div class="col-12 col-lg-6">
+        <div class="planet text-md-center p-4 ">
+          <img src="../starter-code/assets/destination/image-moon.png" id="image"  alt="" class="animate__animated animate__fadeIn img-fluid">
+        </div>
+     </div>
+     <div class="col-12 mt-lg-5 col-lg-6 text-md-center">
+      <button class=" btn  btn-primary" onclick="changeplanet(0)">Moon</button>
+      <button class=" btn btn-success" onclick="changeplanet(1)">Mars</button>
+      <button class=" btn btn-success" onclick="changeplanet(2)">Europa</button>
+      <button class=" btn btn-success" onclick="changeplanet(3)">Titan</button>
+      <div class=" mt-lg-5  text-white " style=" height:300px;">
+        <h1 id="nameofplanet" class=" h-25">Moons </h1>
+        <p id="description" class=" h-50">
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
+        <br>
+        <div class="h-25 d-flex justify-content-around">
+          <div >
+            <h6>AVG. DISTANCE</h6>
+            <h6 id="distance"> 384,400 km  </h6>
+          </div>
+          <div >
+            <h6>Est. travel time</h6>
+            <h6 dir="duration">3 days</h6>
+          </div>
+        </div>
+      </div>
+     </div>
+   </div>
+ </section>
+
+ <!-- crew -->
+
+ <section class="crew vh-100 container-fluid">
+   <div class="row d-flex align-items-center h-100">
+     <div class="col-12 ">
+       <div id="carouselExampleIndicators" class="carousel ms-lg-5 slide" data-bs-ride="carousel"> 
+        <!-- <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+        <div class="carousel-inner " >
+          <div class="carousel-item w-75  active">
+             <div class="row"> 
+              <div class="col-12 col-md-6">
+                <h1>Hello</h1>
+                <h1>this is me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ut earum possimus pariatur quidem illum dolorum cumque distinctio eveniet accusantium, repellendus, quibusdam quaerat rerum? Optio amet odio enim placeat natus.</p>
+              </div>
+              <div class=" col-12 col-md-6">
+                <img src="../starter-code/assets/crew/image-anousheh-ansari.png" class="d-block w-25" alt="...">
+              </div>
+            
+              </div> 
+         
+          </div>
+          <div class="carousel-item w-75 ">
+             <div class="row">
+              <div class="col-6 h-100">
+                <h1>Hello</h1>
+                <h1>this is me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ut earum possimus pariatur quidem illum dolorum cumque distinctio eveniet accusantium, repellendus, quibusdam quaerat rerum? Optio amet odio enim placeat natus.</p>
+              </div>
+              <div class="col-6 h-100">
+                <img src="../starter-code/assets/crew/image-douglas-hurley.png" class="d-block w-25" alt="...">
+              </div>
+            </div>
+          </div>
+          <!-- <div class="carousel-item w-75 ">
+            <div class="row">
+              <div class="col-6">
+                <h1>Hello</h1>
+                <h1>this is me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ut earum possimus pariatur quidem illum dolorum cumque distinctio eveniet accusantium, repellendus, quibusdam quaerat rerum? Optio amet odio enim placeat natus.</p>
+              </div>
+              <div class="col-6">
+                <img src="../starter-code/assets/crew/image-mark-shuttleworth.png" class="d-block w-25" alt="...">
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    
+      
+   
+    </div>
+   </div>
+
+</section>
+
+</body>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="starter-code/Function/App.js"></script>
+<script src="starter-code/Function/aboutPlante.js"></script>
+
+
+<script>
+  $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+</script>
+
+
+
+</html>
